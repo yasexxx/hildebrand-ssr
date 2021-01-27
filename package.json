@@ -1,0 +1,17 @@
+{
+  "name": "hildebrand-ssr",
+  "version": "1.0.0",
+  "description": "Angular Universal Application built with Backend API Complete",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/website-reveal/server/main.js"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "development",
+    "nodejs"
+  ],
+  "author": "Hildebrand Cadayona Ligtas",
+  "license": "ISC"
+}
