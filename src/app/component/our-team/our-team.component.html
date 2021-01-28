@@ -1,0 +1,26 @@
+<section id="team" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="custom-light">Our Team</h2>
+      </div>
+      <div class="row">
+          <div *ngFor="let team of teamItems" class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img loading="lazy" [src]="showImg(team)" alt=""></div>
+              <div *ngIf="team?.name" class="details">
+                <h4>{{team.name}}</h4>
+                <span>{{team.position}}</span>
+                <div *ngIf="team.twitter_url" class="social">
+                  <a [href]="team.twitter_url"><i class="fa fa-twitter"></i></a>
+                  <a [href]="team.facebook_url"><i class="fa fa-facebook"></i></a>
+                  <a [href]="team.google_url"><i class="fa fa-google-plus"></i></a>
+                  <a [href]="team.linkedin_url"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+  </section>

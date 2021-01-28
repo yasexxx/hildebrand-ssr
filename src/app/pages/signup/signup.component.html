@@ -1,0 +1,55 @@
+<div class="custom-wrapper">
+    <div class="container">
+        <div class="signup-header">
+            <div class="site-logo">
+                <a href=""><img src="assets/img/logo/site-logo.png" alt="Hildebrand-logo"></a>
+            </div>
+            <div class="signup-redirect">
+                Already have an account? <a routerLink="/login">Log In</a>
+            </div>
+        </div>
+    
+        <div id=signup-id class="card card-custom">
+            <div class="form card-header card-wrapper text-align-center">
+                <span class="card-title">
+                    <div class="h3">
+                        Get your free account
+                    </div>
+                </span>
+                <div class="btn-option card-wrapper">
+                    <button class="btn btn-new btn-danger"><i class="ion-social-google mr-5"></i>Continue with Google</button>
+                    <button class="btn btn-new btn-primary"><i class="ion-social-facebook mr-5"></i>Continue with Facebook</button>
+                </div>
+                <div class="flex">
+                    <hr><span>or</span><hr>
+                </div>
+                <form [formGroup]="signUpForm">
+                    <div class="form-group">
+                        <i class="ion-android-mail"></i>
+                        <input type="text" class="form-control" formControlName="email" name="email" id="email" placeholder="youremail@me.com" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="ion-android-person"></i>
+                        <input type="text" class="form-control" formControlName="username" name="username" id="username" placeholder="Username" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="ion-locked"></i>
+                        <input [type]="switchKey" class="form-control" formControlName="password" name="password" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+                </form>
+                <div>
+                    <div class="other-icon" *ngIf="isInputted">
+                        <button (click)="switchBtn()" style="background: transparent; border: none; cursor: pointer;"><i class="ion-eye"></i></button>
+                    </div>
+                </div>
+                <div class="btn-option card-wrapper">
+                    <button (click)="submitBtn()" class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

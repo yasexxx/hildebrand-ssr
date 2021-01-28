@@ -1,0 +1,25 @@
+<section id="testimonials" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="custom-light">Testimonials</h2>
+        <p>{{description}}</p>
+      </div>
+      <div class="owl-carousel owl-theme testimonials-carousel">
+
+          <div *ngFor="let item of testimonialArray">
+            <div class="testimonial-item">
+              <p>
+                <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="qouting frame">
+                  {{item.description}}
+                <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="qouting frame">
+              </p>
+              <img [src]="showImg(item)" class="testimonial-img" [alt]="item.name+' in actual photo'">
+              <h3>{{item.name}}</h3>
+              <h4>{{item.job | titlecase}}</h4>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+  </section>

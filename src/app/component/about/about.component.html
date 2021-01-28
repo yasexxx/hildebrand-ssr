@@ -1,0 +1,21 @@
+
+<section id="about" class="wow fadeInUp">
+    <div class="container">
+        <div class="row">
+        <div *ngIf="image" class="col-lg-6 about-img">
+            <img loading="lazy" class="custom-img" [src]="image" [alt]="altDescription">
+        </div>
+
+        <div *ngIf="title && bulletObj?.bullet_1" class="col-lg-6 content">
+            <h2>{{title}}</h2>
+            <h3>{{subtitle}}</h3>
+
+            <ul>
+            <li><i class="ion-android-checkmark-circle"></i> {{bulletObj?.bullet_1}}</li>
+            <li><i class="ion-android-checkmark-circle"></i> {{bulletObj?.bullet_2}}</li>
+            <li><i class="ion-android-checkmark-circle"></i> {{bulletObj?.bullet_3}}</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>

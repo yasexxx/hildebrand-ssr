@@ -1,0 +1,40 @@
+<header id="header">
+    <div class="container">
+  
+      <div *ngIf="imgLogo" id="logo" class="pull-left site-logo">
+        <h1 *ngIf="!isLogo"><a routerLink="" class="scrollto">{{siteTitle}}</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a *ngIf="isLogo" href=""><img loading="lazy" class="site-img" [src]="imgLogo" [alt]="siteTitle" [title]="siteTitle" /></a>
+      </div>
+  
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active home"><a href="#main-home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li *ngIf="!(isLogin | async) && !isBrowser"><a class="login-menu">&nbsp;</a></li>
+          <li *ngIf="!(isLogin | async) && !isBrowser"><a class="signup">&nbsp;</a></li>
+          <li *ngIf="!(isLogin | async) && isBrowser"><a class="login-menu" href="login">Login</a></li>
+          <li *ngIf="!(isLogin | async) && isBrowser"><a href="signup">Sign up</a></li>
+          <li *ngIf="(isLogin | async) && isBrowser" class="menu-has-children"><a class="login-menu" href=""><i class="icon-user ion-android-person"></i> &nbsp; {{userName}}</a>
+            <ul>
+              <li><a href="my-account">My Account</a></li>
+              <li><a href="account-settings">Account Setting</a></li>
+              <li><a href="/?action=log-out" class="log-out" (click)="logoutBtn()">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+    <ul>
+      <li><a href="#">Drop Down 1</a></li>
+      <li><a href="#">Drop Down 3</a></li>
+      <li><a href="#">Drop Down 4</a></li>
+      <li><a href="#">Drop Down 5</a></li>
+    </ul>
+  </li> -->

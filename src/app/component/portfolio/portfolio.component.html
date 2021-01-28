@@ -1,0 +1,103 @@
+<section id="portfolio" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="custom-light">Our Portfolio</h2>
+        <p>{{description}}</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_1?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_1?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_1?.image" [alt]="portfolio_1?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_1?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_2?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_2?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_2?.image" [alt]="portfolio_2?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_2?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_3?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_3?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_3?.image" [alt]="portfolio_3?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_3?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_4?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_4?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_4?.image" [alt]="portfolio_4?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_4?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_5?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_5?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_5?.image" [alt]="portfolio_5?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_5?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_6?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_6?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_6?.image" [alt]="portfolio_6?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_6?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_7?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_7?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_7?.image" [alt]="portfolio_7?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_7?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div *ngIf="portfolio_8?.image" class="portfolio-item wow fadeInUp">
+            <a [href]="portfolio_8?.image" class="portfolio-popup">
+              <img loading="lazy" [src]="portfolio_8?.image" [alt]="portfolio_8?.text">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info"><h2 class="wow fadeInUp">{{portfolio_8?.text}}</h2></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>

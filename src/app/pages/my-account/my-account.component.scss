@@ -1,0 +1,132 @@
+
+.top-content {
+    height: 200px;
+    background: #b2c0d8;
+}
+.t-con-out {
+    margin: 0 80px;
+}
+.t-con-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.img-wrapper {
+    margin: 15px 0 0 50px;
+}
+.rounded-circle {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+.user-info {
+    display: grid;
+    grid-auto-rows: 50px;
+}
+.input-name {
+    padding-left: 15px;
+}
+
+textarea {
+    resize: none;
+}
+.social-links {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.social-img {
+    height: 40px;
+}
+
+.middle-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background: #f8f8fa;
+}
+.card{
+    width: 70vw;
+    background-color: white;
+}
+.form input,
+.form label,
+.form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+}
+.lower-content {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    background: #f8f8fa;
+    padding-bottom: 30px;
+}
+
+.lower-content button {
+    width: 100px;
+    height: 45px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+}
+@media(max-width:992px){
+    .top-content {
+        height: 300px;
+    }
+
+    .t-con-in {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social-links {
+        display: flex;
+        column-gap: 30px;
+    }
+}
+
+@media(max-width: 700px){
+    .top-content {
+        height: 500px;
+    }
+    .img-wrapper {
+        margin: 15px auto 0 auto;
+    }
+    .t-con-out {
+        padding: 0 10px;
+    } 
+    .t-con-in {
+        grid-template-columns: 1fr;
+    }
+    .social-links {
+        margin: 4rem auto;
+    }
+}
+
+@media(max-width: 465px){
+    .t-con-out {
+        margin: 0 0.3rem;
+    }
+    .upload-txt {
+        display: none;
+    }
+    .card{
+        width: 96%;
+    }
+
+    .social-links {
+        column-gap: 3vw;
+    }
+}
+
+@media(max-width:294px){
+    .account-container {
+        overflow-x: hidden;
+    }
+    .lower-content{
+        column-gap: 5vw;
+    }
+    .lower-content button {
+        width: auto;
+    }
+}

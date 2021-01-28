@@ -1,0 +1,15 @@
+<section id="topbar" class="d-none d-lg-block">
+    <div *ngIf="topbarEmail" class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a [href]="'mailto:'+topbarEmail">{{topbarEmail}}</a>
+        <i class="fa fa-phone"></i> {{topbarContact}}
+      </div>
+      <div class="social-links float-right">
+        <a [href]="twitterLink" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a [href]="googleLink" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a [href]="facebookLink" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a [href]="instagramLink" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  

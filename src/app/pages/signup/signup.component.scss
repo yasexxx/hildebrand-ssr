@@ -1,0 +1,95 @@
+.custom-wrapper {
+    background-color: rgb(225, 229, 241);
+    min-height: 140vh;
+    overflow-x: hidden;
+}
+.signup-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.site-logo img {
+    padding-top: 10px;
+}
+// .site-logo {
+//     margin: 0 auto;
+// }
+.signup-redirect {
+    margin: auto auto;
+}
+.card-custom {
+    width: 500px;
+    margin: 2rem auto;
+}
+.card-custom > div {
+    background: white;
+}
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card-title {
+    text-align: center;
+}
+.card-title > div {
+    margin: 2rem 0;
+}
+.btn-option {
+    padding: 0 2rem;
+}
+.btn-option > button {
+    margin-bottom: 20px;
+}
+.flex {
+    text-align: center;
+}
+#signup-id .form input,
+#signup-id .form textarea {
+    padding: 10px 0px 10px 70px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+  }
+.form-group {
+    padding: 0 2rem;
+}
+
+.btn-new {
+    padding: 10px 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+  }
+.form-group i {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.other-icon {
+    font-size: 30px;
+    margin: -58px 0px 0px 370px;
+}
+
+@media(max-width:545px){
+    .signup-header {
+        grid-template-columns: 1fr;
+    }
+    .signup-redirect{
+        margin-top: 30px;
+    }
+    .card-custom {
+        width: auto;
+        margin: 2rem 5px;
+        overflow-x: scroll;
+    }
+
+    .btn-option,
+    .form-group {
+        padding: 0 0.4rem;
+    }
+    .site-logo img{
+        padding-top: 20px;
+        max-height: 60px;
+    }
+
+    
+}

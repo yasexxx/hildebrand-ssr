@@ -1,0 +1,51 @@
+<div class="container-wrapper">
+    <div class="custom-wrapper">
+        <div class="login-header">
+            <div class="site-logo container ml-sm-5 pl-sm-5">
+                <a href=""><img src="assets/img/logo/site-logo.png" alt="Hildebrand-logo"></a>
+            </div>
+        </div>
+    <div class="container">
+        <div id=login-id class="card card-custom">
+            <div class="form card-header card-wrapper text-align-center">
+                <span class="card-title">
+                    <div class="h3">
+                        Log in your account
+                    </div>
+                    <div *ngIf="isError">
+                        <strong class="error-msg">{{errorMsg}}</strong>
+                    </div>
+                </span>
+                <form [formGroup]="loginForm">
+                    <div class="form-group">
+                        <i class="ion-android-person"></i>
+                        <input type="text" formControlName="username" class="form-control" name="username" id="username" placeholder="Username or email" required />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <i class="ion-locked"></i>
+                        <input [type]="switchKey" formControlName="password" class="form-control" name="password" id="password" placeholder="Password" required />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="other-icon" *ngIf="isInputted">
+                        <button (click)="switchBtn()" style="background: transparent; border: none; cursor: pointer;"><i class="ion-eye"></i></button>
+                    </div>
+                    <p class="form-group" style="font-size: 12px">Don't have account yet? <a routerLink="/signup">click here</a></p>
+                    <div class="btn-option card-wrapper">
+                        <button (click)="submitBtn()" class="btn btn-success">Log in</button>
+                    </div>
+                </form>
+                <div class="flex">
+                    <hr><span>or</span><hr>
+                </div>
+                <div class="btn-option card-wrapper my-4">
+                    <button class="btn btn-new btn-danger"><i class="ion-social-google mr-5"></i>Continue with Google</button>
+                    <button class="btn btn-new btn-primary"><i class="ion-social-facebook mr-5"></i>Continue with Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>
+</div>

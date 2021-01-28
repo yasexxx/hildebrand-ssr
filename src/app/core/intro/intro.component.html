@@ -1,0 +1,19 @@
+<section id="intro">
+
+    <div class="intro-content">
+      <h2>{{introHeader}}</h2>
+      <div *ngIf="btnsObj">
+        <a href="#about" class="btn-get-started scrollto">{{btnsObj?.button_1}}</a>
+        <a href="#portfolio" class="btn-projects scrollto">{{btnsObj?.button_2}}</a>
+      </div>
+    </div>
+
+    <div *ngIf="carousel_1" id="intro-carousel" class="owl-carousel" >
+      <div class="item" [ngStyle]="carousel_1"></div>
+      <div class="item" [ngStyle]="carousel_2"></div>
+      <div class="item" [ngStyle]="carousel_3"></div>
+      <div class="item" [ngStyle]="carousel_4"></div>
+    </div>
+
+  </section>
+  

@@ -1,0 +1,45 @@
+<section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="custom-light">Services</h2>
+        <p>{{description}}</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div *ngIf="servicesObj?.title_1" class="box wow fadeInLeft">
+            <div class="icon"><i class="fa fa-bar-chart"></i></div>
+            <h4 class="title"><a href="">{{servicesObj?.title_1}}</a></h4>
+            <p class="description">{{servicesObj?.description_1}}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div *ngIf="servicesObj?.title_2" class="box wow fadeInRight">
+            <div class="icon"><i class="fa fa-picture-o"></i></div>
+            <h4 class="title"><a href="">{{servicesObj?.title_2}}</a></h4>
+            <p class="description">{{servicesObj?.description_2}}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div *ngIf="servicesObj?.title_3" class="box wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+            <h4 class="title"><a href="">{{servicesObj?.title_3}}</a></h4>
+            <p class="description">{{servicesObj?.description_3}}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div *ngIf="servicesObj?.title_4" class="box wow fadeInRight" data-wow-delay="0.2s">
+            <div class="icon"><i class="fa fa-map"></i></div>
+            <h4 class="title"><a href="">{{servicesObj?.title_4}}</a></h4>
+            <p class="description">{{servicesObj?.description_4}}</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
