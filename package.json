@@ -4,6 +4,7 @@
   "description": "Angular Universal Application built with Backend API Complete",
   "main": "index.js",
   "scripts": {
+    "build": "ng build --prod",
     "start": "node dist/website-reveal/server/main.js"
   },
   "keywords": [
